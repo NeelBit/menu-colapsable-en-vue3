@@ -1,0 +1,93 @@
+:root {
+    /* paleta de colores */
+    --colorFondoBlanco: #e0e0e0;
+    --colorPrimario: #009ef7;
+    --colorBlanco: #ffffff;
+    --colorBlancoRelax: #eee6e6;
+    --colorNegro: #000000;
+    --colorNegroRelax: #222;
+    --colorGris: #666666;
+    --color-bg: #1e1e2d;
+
+    --redondeo: 1rem;
+    --separacion: 2rem;
+}
+
+/* HTML */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+    color-scheme: dark;
+}
+
+* {
+    /* font-family: var(--fontPrincipal); */
+    color: var(--colorBlancoRelax);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* BODY */
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    background-color: var(--color-bg);
+}
+
+/* GLOBALES: */
+.contenedor {
+    width: 95%;
+    margin: 0 auto;
+}
+
+@media (min-width: 480px) {
+    .contenedor {
+        width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenedor {
+        /* width: 85%;
+        max-width: 120rem; */
+        width: min(85%, 120rem);
+    }
+}
+
+/* HEADERS */
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 2.0rem;
+}
+
+/* IMAGENES */
+img {
+    max-width: 100%;
+    margin: 0;
+    vertical-align: top;
+}
+
+.centrar-texto {
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
